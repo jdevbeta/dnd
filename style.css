@@ -1,0 +1,267 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: url("maninthemountains.jpg");
+	background-size: cover;
+}
+
+/* SYSTEM PANEL */
+
+#systemPanel {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 30vw;
+	width: 70vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+#systemPanel input {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#systemPanel input:focus {
+	background: rgba(255,255,255,1);
+}
+
+#systemPanel input[type="number"]{
+	width: 100px;
+	margin: 5px; 
+	padding: 0 0 0 0;
+	border-top: 0px solid #444;
+	border-right: 3px solid #444;
+	border-bottom: 5px solid #777;
+	border-left: 3px solid #444;
+	border-radius: 15px 5px 5px 15px;
+	outline: none;
+	text-align: center;
+	font-size: 25px;
+	font-family: "Font1";
+	overflow: hidden;
+}
+
+#systemPanel input[type="text"]{
+	width: 200px;
+	margin: 5px;
+	padding: 0 0 0px 0;
+	padding-bottom: 0px;
+	border-top: 0px solid #444;
+	border-right: 0px solid #444;
+	border-bottom: 4px solid #444;
+	border-left: 3px solid #777;
+	border-radius: 10px;
+	outline: none;
+	text-align: center;
+	font-size: 25px;
+	font-family: "Font1";
+}
+
+#systemPanel fieldset {
+	display: inline-block;
+	position: absolute;
+	width: auto;
+	min-width: 360px;
+	max-height: 100%;
+	margin: 10px;
+	padding: 5px;
+	background-color: #555;
+	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%20055ff2' fill-opacity='0.86' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+	border-top: 3px solid #777;
+	border-right: 3px solid #777;
+	border-bottom: 3px solid #333;
+	border-left: 3px solid #333;
+	border-radius: 7px;
+	text-align: left;
+	z-index: 0;
+	overflow: hidden;
+	transition: max-height 1s ease;
+}
+
+#systemPanel fieldset:hover {
+	z-index: 1;
+}
+
+#systemPanel fieldset legend {
+	position: relative;
+	width: 25vw;
+	padding: 0 20px;
+	background: linear-gradient(to top right, #333, #777);
+	border-top: 3px solid #777;
+	border-right: 3px solid #777;
+	border-bottom: 3px solid #333;
+	border-left: 3px solid #333;
+	border-radius: 8px;
+	color: #fc9;
+	font-family: "Font5";
+	font-size: 23px;
+	cursor: move;
+}
+
+#systemPanel fieldset div {
+	margin-top: 2px;	
+	background: rgba(255,255,255,0.5);
+}
+
+#systemPanel input:focus ~ label {
+	text-shadow: 0 0 5px #fff;
+	transform: translateX(10%) scale(1.2);
+}
+
+#systemPanel textarea:focus ~ label {
+	transform: translateX(10%) scale(1.2);
+}
+
+#systemPanel fieldset textarea {
+	display: block;
+	width: 100%;
+	height: 200px;
+	background: rgba(255,255,255,0.5);
+	outline: none;
+	font-size: 25px;
+	font-family: Font1;
+}
+
+#systemPanel fieldset textarea:focus {
+	background: #fff;
+}
+
+#systemPanel label {
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	color: #333;
+	font-size: 20px;
+	font-family: "Font3";
+	text-shadow: 0 0 0px #000;
+	transition: text-shadow 0.5s ease, transform 0.5s ease;
+	transition-delay: 0.2		s;
+}
+
+/* END SYSTEM PANEL */
+
+/* LEFT PANEL */
+
+#leftPanel {
+	display: block;
+	position: fixed;
+	top: 0;
+	width: 30vw;
+	left: 0;
+	height: 100%;
+	background: #333;
+	text-align: center;
+}
+
+
+#user-frame {
+	display: block;
+	width: auto;
+	height: auto;
+	margin: 25px 15px;
+	text-align: center;
+}
+
+#user-pic {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 250px;
+	background: #555;
+	border: 5px solid #ccc;
+	border-radius: 7px;
+	box-shadow: 2px 2px 10px -2px #000;
+}
+
+#title-frame {
+	margin: 10px 30px;
+	padding: 5px;
+	background: linear-gradient(to top right, #974, #fc5);
+	box-shadow: 2px 2px 10px -2px #111,
+		inset -2px 2px 12px -2px #fec,
+		inset 2px -2px 12px -2px #111;
+	border: 2px solid #333;
+	border-radius: 5px/40px;
+	overflow: hidden;
+}
+
+#title-frame h1 {
+	margin: 0;
+	padding: 0;
+	color: #222;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: Font5;
+	text-shadow: 0 0 5px #fff;
+	text-decoration: underline;
+}
+
+#title-frame h2 {
+	margin: 0;
+	padding: 0;
+	color: #222;
+	font-size: 22px;
+	line-height: 30px;
+	font-family: Font5;
+}
+
+.icon-panel {
+	background: rgba(255,255,255,0.3);
+	border: 1px solid #000;
+	text-align: left;
+}
+
+.icon-panel i {
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-size: 40px;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.icon-panel input {
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+	width: 50px;
+	margin: 4px 10px;
+	padding: 0;
+	background: #aaa;
+	border: none;
+	border-right: 4px solid #eee;
+	border-bottom: 3px solid #555;
+	border-radius: 10px;
+	outline: none;
+	font-size: 25px;
+	font-family: Font1;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.icon-panel input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.icon-panel label {
+	display: inline-block;
+	box-sizing: border-box;
+	margin: auto;
+	padding: 0 10px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	font-size: 20px;
+	font-family: "Font3";
+	letter-spacing: -1px;
+}
+
+/* END LEFT PANEL */
